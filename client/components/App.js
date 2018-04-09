@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
  
 import SongList from './SongList';
-
+import SongCreate from './SongCreate';
  
 class App extends Component {
   render() {
@@ -10,6 +10,7 @@ class App extends Component {
       <div className="container">
         <Switch>
           <Route exact path="/" component={SongList} />
+          <Route exact path="/song/new" component={SongCreate} />
           <Route component={SongList} />
         </Switch>
       </div>
