@@ -12,8 +12,10 @@ import SongCreate from './components/SongCreate';
 import LyricCreate from './components/LyricCreate';
 
 
-const client = new ApolloClient({});
-
+const client = new ApolloClient({
+  dataIdFromObject: o => o.id
+});
+  
 const Root = () => {
   return (
     <ApolloProvider client={client}>
