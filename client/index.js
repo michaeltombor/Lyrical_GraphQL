@@ -13,7 +13,7 @@ import LyricCreate from './components/LyricCreate';
 
 
 const client = new ApolloClient({
-  dataIdFromObject: o => o.id
+  dataIdFromObject: object => object.id
 });
   
 const Root = () => {
